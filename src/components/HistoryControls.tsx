@@ -99,6 +99,14 @@ function GitHubIcon() {
     );
 }
 
+function InfoIcon() {
+    return (
+        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+        </svg>
+    );
+}
+
 interface ViewToggleButtonProps {
     mode: ViewMode;
     currentMode: ViewMode;
@@ -426,7 +434,8 @@ export function HistoryControls() {
     const {
         undo, redo, canUndo, canRedo, resetMockVideo, clearHistory,
         history, historyIndex, viewMode, setViewMode,
-        playerThumbnailPlacement, setPlayerThumbnailPlacement
+        playerThumbnailPlacement, setPlayerThumbnailPlacement,
+        setHasSeenIntro
     } = useAppStore();
 
     const [isHidden, setIsHidden] = useState(false);
@@ -616,6 +625,17 @@ export function HistoryControls() {
                         >
                             <GitHubIcon />
                         </motion.a>
+
+                        {/* About/Info button */}
+                        <motion.button
+                            onClick={() => setHasSeenIntro(false)}
+                            className="p-1.5 rounded-full hover:bg-blue-500/20 text-yt-text-secondary hover:text-blue-400 transition-colors"
+                            title="About this app"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        >
+                            <InfoIcon />
+                        </motion.button>
                     </motion.div>
                 )}
             </AnimatePresence>

@@ -1,4 +1,4 @@
-# Mockup Design - YouTube
+# YouTube Mockup Design
 
 A beautiful, client-side tool to preview your YouTube thumbnails in context before uploading. See exactly how your thumbnails will appear on YouTube's home page, search results, and watch page.
 
@@ -27,14 +27,14 @@ This app is designed with privacy in mind:
 
 ### Use Online
 
-Visit [your-deployed-url.com](https://your-deployed-url.com) to use the app directly.
+Visit the deployed version to use the app directly.
 
 ### Run Locally
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/mockup-design-youtube.git
-cd mockup-design-youtube
+git clone https://github.com/aAndy03/mockup-thumbnail-youtube.git
+cd mockup-thumbnail-youtube
 
 # Install dependencies
 npm install
@@ -106,9 +106,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- YouTube for the design inspiration
-- The React and Vite communities
+- The React, Vite, TanStack, Zustand, Tailwind CSS, and Framer Motion communities
 - All contributors and users
+
+## ⚠️ Disclaimer
+
+This is an independent project. **Neither YouTube nor the libraries mentioned above officially endorse this product.** YouTube is a trademark of Google LLC.
 
 ---
 

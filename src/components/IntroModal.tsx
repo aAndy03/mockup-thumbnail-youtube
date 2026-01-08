@@ -302,14 +302,97 @@ export function IntroModal({ onClose }: IntroModalProps) {
                     v1.0.0 • Made with ❤️ for creators
                 </motion.div>
 
-                {/* Credits */}
+                {/* Credits with logos */}
                 <motion.div
-                    className="mt-3 text-xs text-[#333]"
+                    className="mt-6"
                     initial={{ opacity: 0 }}
                     animate={step >= 3 && !isClosing ? { opacity: 1 } : { opacity: 0 }}
                     transition={{ delay: isClosing ? 0 : 0.7 }}
                 >
-                    Thanks to React, Vite, TanStack, Zustand, Tailwind CSS, Framer Motion & the open source community
+                    <p className="text-xs text-[#444] mb-3">Built with</p>
+                    <div className="flex items-center justify-center gap-4 flex-wrap">
+                        {/* React */}
+                        <motion.div
+                            className="flex items-center gap-1.5 px-2 py-1 rounded bg-white/5"
+                            whileHover={{ scale: 1.05 }}
+                            title="React"
+                        >
+                            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="#61DAFB">
+                                <circle cx="12" cy="12" r="2.5" />
+                                <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61DAFB" strokeWidth="1" />
+                                <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61DAFB" strokeWidth="1" transform="rotate(60 12 12)" />
+                                <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61DAFB" strokeWidth="1" transform="rotate(120 12 12)" />
+                            </svg>
+                            <span className="text-xs text-[#61DAFB]">React</span>
+                        </motion.div>
+
+                        {/* Vite */}
+                        <motion.div
+                            className="flex items-center gap-1.5 px-2 py-1 rounded bg-white/5"
+                            whileHover={{ scale: 1.05 }}
+                            title="Vite"
+                        >
+                            <svg className="w-4 h-4" viewBox="0 0 32 32">
+                                <path d="M29.884 6.146l-13.142 23.5a.714.714 0 01-1.244.005L2.096 6.148a.714.714 0 01.746-1.057l13.156 2.352a.714.714 0 00.253 0l12.881-2.348a.714.714 0 01.752 1.05z" fill="url(#vite-a)" />
+                                <path d="M22.264 2.007l-10.66 2.103a.357.357 0 00-.286.327l-.678 11.39a.357.357 0 00.434.369l2.94-.676a.357.357 0 01.427.423l-.868 4.264a.357.357 0 00.452.412l1.808-.52a.357.357 0 01.451.413l-1.381 6.67a.223.223 0 00.406.146l.271-.394 7.477-14.886a.357.357 0 00-.382-.508l-3.057.528a.357.357 0 01-.408-.457l1.912-8.803a.357.357 0 00-.408-.457z" fill="url(#vite-b)" />
+                                <defs>
+                                    <linearGradient id="vite-a" x1="6" y1="33" x2="235" y2="344" gradientUnits="userSpaceOnUse" gradientTransform="matrix(.07142 0 0 .07142 1.4 1.4)">
+                                        <stop stopColor="#41D1FF" />
+                                        <stop offset="1" stopColor="#BD34FE" />
+                                    </linearGradient>
+                                    <linearGradient id="vite-b" x1="194.651" y1="8.818" x2="236.076" y2="292.989" gradientUnits="userSpaceOnUse" gradientTransform="matrix(.07142 0 0 .07142 1.4 1.4)">
+                                        <stop stopColor="#FFBD4F" />
+                                        <stop offset="1" stopColor="#FF980E" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <span className="text-xs text-[#BD34FE]">Vite</span>
+                        </motion.div>
+
+                        {/* Tailwind */}
+                        <motion.div
+                            className="flex items-center gap-1.5 px-2 py-1 rounded bg-white/5"
+                            whileHover={{ scale: 1.05 }}
+                            title="Tailwind CSS"
+                        >
+                            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="#38BDF8">
+                                <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z" />
+                            </svg>
+                            <span className="text-xs text-[#38BDF8]">Tailwind</span>
+                        </motion.div>
+
+                        {/* Framer Motion */}
+                        <motion.div
+                            className="flex items-center gap-1.5 px-2 py-1 rounded bg-white/5"
+                            whileHover={{ scale: 1.05 }}
+                            title="Framer Motion"
+                        >
+                            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="#FF0055">
+                                <path d="M4 0h16v8h-8v8H4V0zm0 16h8l8 8H4v-8z" />
+                            </svg>
+                            <span className="text-xs text-[#FF0055]">Motion</span>
+                        </motion.div>
+
+                        {/* Zustand */}
+                        <motion.div
+                            className="flex items-center gap-1.5 px-2 py-1 rounded bg-white/5"
+                            whileHover={{ scale: 1.05 }}
+                            title="Zustand"
+                        >
+                            <span className="text-sm">🐻</span>
+                            <span className="text-xs text-[#764ABC]">Zustand</span>
+                        </motion.div>
+                    </div>
+                </motion.div>
+
+                {/* Disclaimer */}
+                <motion.div
+                    className="mt-6 text-[10px] text-[#333] max-w-md mx-auto"
+                    initial={{ opacity: 0 }}
+                    animate={step >= 3 && !isClosing ? { opacity: 1 } : { opacity: 0 }}
+                    transition={{ delay: isClosing ? 0 : 0.8 }}
+                >
+                    This is an independent project. Neither YouTube nor the libraries mentioned above officially endorse this product.
                 </motion.div>
             </motion.div>
         </motion.div>

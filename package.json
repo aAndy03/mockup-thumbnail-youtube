@@ -12,6 +12,7 @@
   "dependencies": {
     "@tanstack/react-query": "^5.90.16",
     "@tanstack/react-router": "^1.145.11",
+    "@vercel/analytics": "^1.6.1",
     "framer-motion": "^12.24.10",
     "html2canvas": "^1.4.1",
     "modern-screenshot": "^4.6.7",

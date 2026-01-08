@@ -109,10 +109,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - The React, Vite, TanStack, Zustand, Tailwind CSS, and Framer Motion communities
 - All contributors and users
 
+## 🤖 Developed with AI
+
+This project was developed with assistance from:
+
+- **Antigravity** - Advanced Agentic Coding by Google DeepMind
+- **Claude Opus 4.5 Thinking** by Anthropic
+
 ## ⚠️ Disclaimer
 
-This is an independent project. **Neither YouTube nor the libraries mentioned above officially endorse this product.** YouTube is a trademark of Google LLC.
+This is an independent project. **Neither YouTube, Google DeepMind, Anthropic, nor the libraries mentioned above officially endorse this product.** YouTube is a trademark of Google LLC.
 
 ---
 
-Made with ❤️ for content creators
+Made with ❤️ for content creators (and AI 🤖)

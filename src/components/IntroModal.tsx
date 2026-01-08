@@ -383,6 +383,30 @@ export function IntroModal({ onClose }: IntroModalProps) {
                             <span className="text-xs text-[#764ABC]">Zustand</span>
                         </motion.div>
                     </div>
+
+                    {/* AI Credits */}
+                    <p className="text-xs text-[#444] mt-4 mb-2">Developed with AI assistance</p>
+                    <div className="flex items-center justify-center gap-4">
+                        {/* Antigravity */}
+                        <motion.div
+                            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-500/20"
+                            whileHover={{ scale: 1.05 }}
+                            title="Antigravity by Google DeepMind"
+                        >
+                            <span className="text-sm">🚀</span>
+                            <span className="text-xs font-medium bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Antigravity</span>
+                        </motion.div>
+
+                        {/* Claude */}
+                        <motion.div
+                            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r from-orange-500/10 to-amber-500/10 border border-orange-500/20"
+                            whileHover={{ scale: 1.05 }}
+                            title="Claude Opus 4.5 Thinking by Anthropic"
+                        >
+                            <span className="text-sm">🧠</span>
+                            <span className="text-xs font-medium bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">Claude Opus 4.5</span>
+                        </motion.div>
+                    </div>
                 </motion.div>
 
                 {/* Disclaimer */}

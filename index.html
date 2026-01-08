@@ -12,30 +12,78 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="Mockup Design" />
+  <meta name="apple-mobile-web-app-title" content="YouTube Mockup Design" />
 
   <!-- SEO Meta Tags -->
   <meta name="description"
-    content="Preview your YouTube thumbnails in context before uploading. See how they look on home page, search results, and watch page." />
-  <meta name="keywords" content="YouTube, thumbnail, preview, mockup, design, creator, video" />
-  <meta name="author" content="Mockup Design" />
+    content="Free YouTube thumbnail preview tool. See how your thumbnails look on YouTube's home page, search results, and watch page before uploading. 100% private, runs in your browser." />
+  <meta name="keywords"
+    content="YouTube thumbnail preview, thumbnail mockup, YouTube thumbnail tester, thumbnail designer, video thumbnail preview, YouTube creator tools, thumbnail checker, free thumbnail preview" />
+  <meta name="author" content="YouTube Mockup Design" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  <link rel="canonical" href="https://mockup-thumbnail-youtube.vercel.app/" />
 
-  <!-- Open Graph / Social -->
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="YouTube Mockup Design - Preview Thumbnails in Context" />
+  <meta property="og:url" content="https://mockup-thumbnail-youtube.vercel.app/" />
+  <meta property="og:title" content="YouTube Mockup Design - Free Thumbnail Preview Tool" />
   <meta property="og:description"
-    content="Preview your YouTube thumbnails in context before uploading. See how they look on home page, search results, and watch page." />
-  <meta property="og:image" content="/og-image.png" />
+    content="Preview your YouTube thumbnails in context before uploading. See exactly how they'll appear on home page, search results, and watch page. 100% free and private." />
+  <meta property="og:image" content="https://mockup-thumbnail-youtube.vercel.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="YouTube Mockup Design" />
+  <meta property="og:locale" content="en_US" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="YouTube Mockup Design" />
-  <meta name="twitter:description" content="Preview your YouTube thumbnails in context before uploading." />
+  <meta name="twitter:url" content="https://mockup-thumbnail-youtube.vercel.app/" />
+  <meta name="twitter:title" content="YouTube Mockup Design - Free Thumbnail Preview Tool" />
+  <meta name="twitter:description"
+    content="Preview your YouTube thumbnails in context before uploading. 100% free and private." />
+  <meta name="twitter:image" content="https://mockup-thumbnail-youtube.vercel.app/og-image.png" />
 
-  <title>YouTube Mockup Design - Preview Thumbnails in Context</title>
+  <!-- Security Headers (for reference - Vercel handles these) -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "YouTube Mockup Design",
+      "description": "Free YouTube thumbnail preview tool. See how your thumbnails look on YouTube before uploading.",
+      "url": "https://mockup-thumbnail-youtube.vercel.app/",
+      "applicationCategory": "DesignApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Preview thumbnails on YouTube home page",
+        "Preview thumbnails in search results",
+        "Preview thumbnails on watch page",
+        "Export high-quality screenshots",
+        "100% private - runs locally in browser"
+      ]
+    }
+  </script>
+
+  <title>YouTube Mockup Design - Free Thumbnail Preview Tool | See Before You Upload</title>
 </head>
 
 <body>
+  <noscript>
+    <div style="padding: 20px; text-align: center; background: #0f0f0f; color: white; min-height: 100vh;">
+      <h1>YouTube Mockup Design</h1>
+      <p>This application requires JavaScript to run. Please enable JavaScript in your browser settings.</p>
+    </div>
+  </noscript>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>

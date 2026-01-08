@@ -1,0 +1,8 @@
+# YouTube Mockup Design - Robots.txt
+# https://mockup-thumbnail-youtube.vercel.app
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mockup-thumbnail-youtube.vercel.app/sitemap.xml

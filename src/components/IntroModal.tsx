@@ -267,7 +267,7 @@ export function IntroModal({ onClose }: IntroModalProps) {
                         Get Started
                     </motion.button>
                     <motion.a
-                        href="https://github.com/yourusername/mockup-design-youtube"
+                        href="https://github.com/aAndy03/mockup-thumbnail-youtube"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-6 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white font-medium flex items-center gap-2 hover:bg-white/10 transition-colors"
@@ -300,6 +300,16 @@ export function IntroModal({ onClose }: IntroModalProps) {
                     transition={{ delay: isClosing ? 0 : 0.6 }}
                 >
                     v1.0.0 • Made with ❤️ for creators
+                </motion.div>
+
+                {/* Credits */}
+                <motion.div
+                    className="mt-3 text-xs text-[#333]"
+                    initial={{ opacity: 0 }}
+                    animate={step >= 3 && !isClosing ? { opacity: 1 } : { opacity: 0 }}
+                    transition={{ delay: isClosing ? 0 : 0.7 }}
+                >
+                    Thanks to React, Vite, TanStack, Zustand, Tailwind CSS, Framer Motion & the open source community
                 </motion.div>
             </motion.div>
         </motion.div>

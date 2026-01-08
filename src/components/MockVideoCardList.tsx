@@ -297,17 +297,6 @@ export function MockVideoCardList() {
                         Subtitles
                     </span>
                 </div>
-
-                {/* Image dimensions info */}
-                {mockVideo.customThumbnail && mockVideo.originalWidth && mockVideo.originalHeight && (
-                    <div className="mt-2 text-xs text-yt-text-secondary">
-                        {mockVideo.originalWidth} × {mockVideo.originalHeight}px
-                        {mockVideo.aspectRatioValid
-                            ? ' ✓ Good aspect ratio'
-                            : ` (${(mockVideo.originalWidth / mockVideo.originalHeight).toFixed(2)}:1 - Should be 1.78:1)`
-                        }
-                    </div>
-                )}
             </div>
         </div>
     );

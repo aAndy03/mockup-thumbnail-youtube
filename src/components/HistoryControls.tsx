@@ -606,7 +606,7 @@ export function HistoryControls() {
 
                         {/* GitHub link */}
                         <motion.a
-                            href="https://github.com/yourusername/mockup-design-youtube"
+                            href="https://github.com/aAndy03/mockup-thumbnail-youtube"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-1.5 rounded-full hover:bg-yt-dark-hover text-yt-text-secondary hover:text-white transition-colors"

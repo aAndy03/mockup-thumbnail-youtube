@@ -1,4 +1,4 @@
-# YouTube Mockup Design
+# YouTube Mockup Design/ Youtube Thumbnails Previewer
 
 Client-side tool to preview your YouTube thumbnails in context before uploading. 
 See exactly how your thumbnails will appear on YouTube's home page, search results, and watch page.
